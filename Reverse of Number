@@ -1,0 +1,13 @@
+def reverse(num,rev=0):
+    pos=1
+    dup=num
+    dig=len(str(num))
+    pos=10**(dig-1)
+    while num!=0:
+         rem=num%10
+         rev=rev+rem*pos
+         num=num//10
+         pos=pos//10
+    return rev
+num=2215    
+print(reverse(num,rev=0))    
