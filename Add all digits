@@ -1,0 +1,8 @@
+def add(num,res=0):
+    while num!=0:
+        rem=num%10
+        res=res+rem
+        num=num//10
+        return res
+num=2215
+print(add(num,res=0))
