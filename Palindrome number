@@ -1,0 +1,9 @@
+def palindrome(num,res=0):
+    dup=num
+    while num!=0:
+        rem=num%10
+        res=res*10+rem
+        num=num//10
+        return res
+print('palindrome' if res==dup else 'not palindrome')
+        
