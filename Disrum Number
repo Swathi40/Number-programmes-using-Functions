@@ -1,0 +1,9 @@
+def disrum(num,power,res=0):
+    while num!=0:
+        rem=num%10
+        res=res+rem**power
+        num=num//10
+        power-=1
+    return res
+num=135
+print('disrum' if disrum(num,len(str(num)))==num else 'not disrum')
