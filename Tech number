@@ -1,0 +1,14 @@
+def technumber(num):
+    num_str = str(num)
+    if len(num_str) % 2 == 0:  
+        mid = len(num_str) // 2
+        fp = int(num_str[:mid])
+        sp = int(num_str[mid:])  
+        if num == (fp + sp) ** 2: 
+            return True
+    return False
+num = 2025
+if technumber(num):
+    print('Tech number')
+else:
+    print('Not a tech number')
