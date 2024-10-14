@@ -1,0 +1,13 @@
+def happy_num (num):
+    while num>9:
+        res=0
+        while num!=0:
+            rem=num%10
+            res=res+rem**2
+            num=num//10
+        num=res
+    return num==1 or num==7
+num=19
+print('happy number' if happy_num(num) else 'not happy number')
+    
+        
