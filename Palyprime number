@@ -1,0 +1,17 @@
+def palindrome(num,rev=0):
+    while num!=0:
+        rem=num%10
+        rev=rev*10+rem
+        num=num//10
+        return rev
+def prime(num):
+    for den in range(2,num//2+1):
+        if num%den==0:
+            return False
+    return True
+def palyprime(num):
+    if prime(num)and palindrome(num)==num:
+        return 'palyprime'
+    return 'notpalyprime'
+num=12321
+print(palyprime(num))
